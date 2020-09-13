@@ -15,11 +15,6 @@ plugins {
   id 'checkstyle'
 }
 
-subprojects {
-  tasks.withType(Javadoc).all { enabled = false }
-}
-
-
 allprojects { project ->
   project.repositories {
     mavenCentral()
